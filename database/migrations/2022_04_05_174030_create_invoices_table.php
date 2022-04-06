@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('invoices', function (Blueprint $table) {
             $table->id();
             $table->string('customer_name');
-            $table->float('total_amount', 5, 2);
+            $table->float('total_amount', 8, 2);
             $table->timestamps();
         });
     }
